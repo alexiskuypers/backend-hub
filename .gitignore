@@ -1,0 +1,12 @@
+# Environnement virtuel
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
