@@ -1,24 +1,53 @@
-# Software Engineer Lab
+# Backend Python Hub
 
-Personal lab for learning software engineering with Python, automation, data, APIs and applied AI.
+Central hub for my Python backend roadmap, learning progress and portfolio.
 
-## Setup
+I am building backend projects focused on APIs, PostgreSQL, automation workflows and internal tools.
 
-Create and activate a virtual environment:
+## Focus
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
+Current technical focus:
 
-Install dependencies:
+- Python
+- FastAPI
+- PostgreSQL
+- Docker
+- pytest
+- GitHub Actions
+- automation workflows
+- internal tools
 
-```bash
-pip install -r requirements.txt
-```
+## Purpose of this repository
 
-Run the project:
+This repository is not a code project.
 
-```bash
-python main.py
-```
+It is used to organize:
+
+- my backend learning roadmap;
+- my progress tracker;
+- my concept notes;
+- my portfolio index;
+- links to standalone project repositories.
+
+## Main projects
+
+| Project | Status | Focus |
+|---|---|---|
+| ops-file-audit | Planned | Python CLI, pathlib, CSV, logging |
+| csv-supplier-normalizer | Planned | CSV validation, HTTP APIs, email summary |
+| procurement-sql-lab | Planned | PostgreSQL, schema design, SQL |
+| approval-api | Planned | FastAPI, auth, permissions, business workflow |
+| workflow-automation-platform | Planned | Jobs, CSV, PDF, emails, idempotence, audit trail |
+
+## Navigation
+
+- [Portfolio index](./portfolio.md)
+- [Learning log](./learning-log/README.md)
+- [Roadmap](./learning-log/roadmap.md)
+- [Progress tracker](./learning-log/progress-tracker.md)
+
+## Current phase
+
+Phase 1 — Foundations
+
+Current goal: work cleanly on a backend project from the terminal, with Git, GitHub, an isolated Python environment and a readable project structure.
