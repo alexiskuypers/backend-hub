@@ -1,5 +1,6 @@
 # Nom du concept
 
+
 ## Objectif
 
 Pourquoi ce concept existe et ce qu’il me permet de faire.
@@ -16,8 +17,9 @@ Lien avec un vrai projet backend / Python / terminal.
 
 ## Commandes / exemples
 
-```bash
-```
+*
+*
+*
 
 ## Ce que ça veut dire
 
@@ -41,6 +43,4 @@ Explication courte avec mes mots.
 2.
 3.
 
-## Résumé personnel
 
-En une ou deux phrases :
