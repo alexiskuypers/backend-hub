@@ -1,7 +1,5 @@
 # Progress Tracker
 
-This file is updated once per week during my weekly review.
-
 Rule: do not spend more than 10 minutes updating this file.
 
 ## Status legend

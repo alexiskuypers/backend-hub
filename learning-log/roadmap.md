@@ -5,11 +5,11 @@
 - [x] Terminal Linux basics
 - [x] Git basics
 - [x] GitHub basics
-- [ ] Python environment
-- [ ] pyproject.toml
-- [ ] Python CLI
+- [x] Python environment
+- [x] pyproject.toml
+- [x] Python CLI
 
-Project: `ops-file-audit`
+- [x] Project: `mini-file-audit`
 
 ---
 
