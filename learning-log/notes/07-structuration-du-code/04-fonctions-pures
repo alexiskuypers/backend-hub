@@ -1,0 +1,78 @@
+# Fonctions pures
+
+## Rôle du concept
+
+Une fonction pure est une fonction qui dépend uniquement de ses paramètres et qui retourne toujours le même résultat pour les mêmes entrées.
+
+Elle ne lit pas de fichier, n’écrit pas de fichier, ne fait pas de `print()`, ne modifie pas une variable extérieure et ne dépend pas d’une donnée cachée.
+
+Son rôle est de rendre la logique facile à tester, à déplacer et à réutiliser.
+
+## Exemples
+
+```python
+def normalize_email(raw_email: str) -> str:
+    return raw_email.strip().lower()
+```
+
+Même entrée :
+
+```python
+normalize_email(" CLIENT@EXAMPLE.COM ")
+```
+
+Même sortie :
+
+```python
+"client@example.com"
+```
+
+Autre exemple :
+
+```python
+def is_valid_status(status: str, allowed_statuses: set[str]) -> bool:
+    return status in allowed_statuses
+```
+
+## Erreur typique
+
+Mettre de l’I/O ou un effet caché dans une fonction qui devrait seulement contenir de la logique.
+
+Exemples :
+
+* faire un `print()` dans une fonction de validation ;
+* lire un fichier dans une fonction de normalisation ;
+* modifier une liste reçue en paramètre au lieu de retourner une nouvelle liste ;
+* utiliser la date du jour directement dans la fonction au lieu de la recevoir en paramètre ;
+* dépendre d’une variable globale cachée.
+
+## Règle à retenir
+
+Une fonction pure doit suivre ce modèle :
+
+```text
+paramètres → traitement → return
+```
+
+Elle ne doit pas avoir d’effet secondaire.
+
+Si une fonction est pure, elle est facile à tester avec des `assert`.
+
+```python
+assert normalize_email(" CLIENT@EXAMPLE.COM ") == "client@example.com"
+```
+
+## Utilité en projet
+
+Dans `data-contract-cli`, les fonctions pures doivent porter la logique centrale :
+
+* normaliser un email ;
+* parser une date ;
+* vérifier une règle `required`;
+* vérifier une règle `min` ou `max`;
+* valider un type `integer`, `decimal`, `boolean`;
+* transformer une valeur selon le contrat.
+
+La lecture du CSV et l’écriture des rapports appartiennent à l’I/O.
+
+La validation et la normalisation doivent rester aussi pures que possible pour être testables sans vrais fichiers.
